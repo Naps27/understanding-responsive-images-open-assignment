@@ -23,6 +23,7 @@
 
 		h1 {
 			font-family: 'Lato', Arial, sans-serif;
+			font-size: 3em;
 		}
 
 		header,
@@ -40,8 +41,11 @@
 			margin-top: 1.5em;
 			font-style: italic;
 			font-weight: 300;
-			color: #CC9B70;
-			text-align: left;
+			color: #333;
+			background-color: #f9f9f9;
+			padding: 0.5em;
+			border-radius: 5px;
+			text-align: center;
 		}
 
 		figcaption::before {
@@ -49,7 +53,11 @@
 		}
 
 		figure.fw {
-			max-width: 100%;
+			max-width: 50%;
+		}
+
+		figure.fw img {
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 		}
 
 		figure.fw figcaption,
@@ -62,13 +70,35 @@
 			content: '-';
 		}
 
-		figure.half {
-			width: 50%;
-			float: left;
+		.figure-grp {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 2em;
+			max-width: 45em;
+			margin: 0 auto;
 		}
 
-		.figure-grp+.figure-grp figure {
-			margin-top: -3em;
+		.figure-grp figure {
+			margin: 0;
+			text-align: center;
+		}
+
+		.figure-grp img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.figure-grp figcaption {
+			margin-top: 1.5em;
+			font-style: italic;
+			font-weight: 300;
+			color: #CC9B70;
+			text-align: left;
+		}
+
+		.figure-grp figcaption::before {
+			content: '- ';
 		}
 
 		blockquote {
@@ -94,7 +124,11 @@
 			max-width: 45em;
 			margin-left: auto;
 			margin-right: auto;
+			line-height: 1.5;
+			hyphens: auto;
+			word-wrap: break-word;
 		}
+
 
 		img {
 			width: 100%;
@@ -124,7 +158,7 @@
 				srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896161/IDMX268/office-1_toi9yd.jpg 300w,
 								https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896161/IDMX268/office-1_toi9yd.jpg 600w,
 								https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_1200/v1711896161/IDMX268/office-1_toi9yd.jpg 1200w"
-				alt="office" width="3500" height="2334">
+				alt="computer-mouse" width="3500" height="2334">
 			<figcaption>Join us today!</figcaption>
 		</figure>
 	</header>
@@ -147,57 +181,57 @@
 					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896163/IDMX268/office-2_eqmjmz.jpg"
 					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896163/IDMX268/office-2_eqmjmz.jpg 300w,
 									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896163/IDMX268/office-2_eqmjmz.jpg 600w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,f_auto,q_auto,w_1200/v1711896163/IDMX268/office-2_eqmjmz.jpg 1200"
-					alt="office" width="3500" height="2334">
-			</figure>
-
-			<figure class="half">
-				<img
-					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896161/IDMX268/office-3_sn2fhg.jpg"
-					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896161/IDMX268/office-3_sn2fhg.jpg 300w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896161/IDMX268/office-3_sn2fhg.jpg 600w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_1200/v1711896161/IDMX268/office-3_sn2fhg.jpg 1200w"
-					alt="office" width="3500" height="2333">
-			</figure>
-		</div> <!-- end figure-grp -->
-
-		<div class="figure-grp">
-			<figure class="half">
-				<img
-					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896162/IDMX268/office-8_cuejkn.jpg"
-					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896162/IDMX268/office-8_cuejkn.jpg 300w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896162/IDMX268/office-8_cuejkn.jpg 600w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_1200/v1711896162/IDMX268/office-8_cuejkn.jpg 1200w"
-					alt="office" width="3500" height="2333">
-			</figure>
-
-			<figure class="half">
-				<img
-					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896163/IDMX268/office-9_cdxzge.jpg"
-					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896163/IDMX268/office-9_cdxzge.jpg 300w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896163/IDMX268/office-9_cdxzge.jpg 600w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_1200/v1711896163/IDMX268/office-9_cdxzge.jpg 1200w"
-					alt="office" width="3500" height="2333">
-			</figure>
-		</div> <!-- end figure-grp -->
-
-		<div class="figure-grp">
-			<figure class="half">
-				<img
-					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/q_auto,w_300/v1711896161/IDMX268/office-1_toi9yd.jpg"
-					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896161/IDMX268/office-1_toi9yd.jpg 300w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896161/IDMX268/office-1_toi9yd.jpg 600w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_1200/v1711896161/IDMX268/office-1_toi9yd.jpg 1200w"
-					alt="office" width="3500" height="2334">
-			</figure>
-
-			<figure class="half">
-				<img
-					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896163/IDMX268/office-2_eqmjmz.jpg"
-					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896163/IDMX268/office-2_eqmjmz.jpg 300w,
-									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896163/IDMX268/office-2_eqmjmz.jpg 600w,
 									https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_1200/v1711896163/IDMX268/office-2_eqmjmz.jpg 1200"
-					alt="office" width="3500" height="2334">
+					alt="office-pad-with-glasses" width="3500" height="2334">
+			</figure>
+
+			<figure class="half">
+				<img
+					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896161/IDMX268/office-3_sn2fhg.jpg"
+					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896161/IDMX268/office-3_sn2fhg.jpg 300w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_600/v1711896161/IDMX268/office-3_sn2fhg.jpg 600w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_1200/v1711896161/IDMX268/office-3_sn2fhg.jpg 1200w"
+					alt="person-taking-notes" width="3500" height="2333">
+			</figure>
+		</div> <!-- end figure-grp -->
+
+		<div class="figure-grp">
+			<figure class="half">
+				<img
+					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896162/IDMX268/office-8_cuejkn.jpg"
+					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896162/IDMX268/office-8_cuejkn.jpg 300w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_600/v1711896162/IDMX268/office-8_cuejkn.jpg 600w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_1200/v1711896162/IDMX268/office-8_cuejkn.jpg 1200w"
+					alt="person-looking-at-ipad" width="3500" height="2333">
+			</figure>
+
+			<figure class="half">
+				<img
+					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896163/IDMX268/office-9_cdxzge.jpg"
+					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896163/IDMX268/office-9_cdxzge.jpg 300w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_600/v1711896163/IDMX268/office-9_cdxzge.jpg 600w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_1200/v1711896163/IDMX268/office-9_cdxzge.jpg 1200w"
+					alt="person-walking-with-bag" width="3500" height="2333">
+			</figure>
+		</div> <!-- end figure-grp -->
+
+		<div class="figure-grp">
+			<figure class="half">
+				<img
+					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/q_auto,w_300/v1711896161/IDMX268/office-1_toi9yd.jpg"
+					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896161/IDMX268/office-1_toi9yd.jpg 300w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_600/v1711896161/IDMX268/office-1_toi9yd.jpg 600w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_1200/v1711896161/IDMX268/office-1_toi9yd.jpg 1200w"
+					alt="computer-mouse" width="3500" height="2334">
+			</figure>
+
+			<figure class="half">
+				<img
+					src="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896163/IDMX268/office-2_eqmjmz.jpg"
+					srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896163/IDMX268/office-2_eqmjmz.jpg 300w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_600/v1711896163/IDMX268/office-2_eqmjmz.jpg 600w,
+									https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_1200/v1711896163/IDMX268/office-2_eqmjmz.jpg 1200"
+					alt="office-pad-with-glasses" width="3500" height="2334">
 			</figure>
 		</div> <!-- end figure-grp -->
 
@@ -207,22 +241,20 @@
 			ullam, est quasi debitis voluptates corporis culpa!</p>
 
 		<figure>
-			<img
-				src="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896163/IDMX268/office-4_pwyta1.jpg"
-				srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896163/IDMX268/office-4_pwyta1.jpg 300w,
-								https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896163/IDMX268/office-4_pwyta1.jpg 600w,
-								https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_1200/v1711896163/IDMX268/office-4_pwyta1.jpg 1200w"
-				alt="office" width="3500" height="2333">
-			<figcaption>Post-its</figcaption>
+			<img src="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896163/IDMX268/office-4_pwyta1.jpg"
+				srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896163/IDMX268/office-4_pwyta1.jpg 300w,
+								https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_600/v1711896163/IDMX268/office-4_pwyta1.jpg 600w,
+								https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_1200/v1711896163/IDMX268/office-4_pwyta1.jpg 1200w"
+				alt="post-it-notes-on-desk" width="3500" height="2333">
+			<figcaption>Post-its - </figcaption>
 		</figure>
 
 		<figure class="fw">
-			<img
-				src="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896162/IDMX268/office-5_uqvqya.jpg"
-				srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_300/v1711896162/IDMX268/office-5_uqvqya.jpg 300w,
-								https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_600/v1711896162/IDMX268/office-5_uqvqya.jpg 600w,
-								https://res.cloudinary.com/dpcvvlgm0/image/upload/f_auto,q_auto,w_1200/v1711896162/IDMX268/office-5_uqvqya.jpg 1200w"
-				alt="office" width="3500" height="2333">
+			<img src="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896162/IDMX268/office-5_uqvqya.jpg"
+				srcset="https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_300/v1711896162/IDMX268/office-5_uqvqya.jpg 300w,
+								https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_600/v1711896162/IDMX268/office-5_uqvqya.jpg 600w,
+								https://res.cloudinary.com/dpcvvlgm0/image/upload/q_auto,w_1200/v1711896162/IDMX268/office-5_uqvqya.jpg 1200w"
+				alt="at-home-office" width="3500" height="2333">
 			<figcaption>Laptop on table</figcaption>
 		</figure>
 	</main>
